@@ -2,7 +2,7 @@ package com.tradeshift.domain;
 
 import static com.tradeshift.domain.TriangleType.*;
 
-public class Triangle {
+public final class Triangle {
 
     private final double firstSide;
     private final double secondSide;
