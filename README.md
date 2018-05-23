@@ -11,4 +11,4 @@ _Design Decisions taken to solve the problem._
 3. I have also included validation logic in the same domain. We could argue here to extract the logic in separate validator class. But I thought this validation logic is not common and only belongs to Triangle domain.
 4. Validation is triggered from constructor. We could argue again to not validate from constructor, but I do not wish to construct the Triangle with invalid inputs.
 
-_TriangleTest.java covers all the basic test scenarios needed to solve this challenge. Test cases follow BDD pattern and test cases names are descriptive.
+_TriangleTest.java covers all the basic test scenarios needed to solve this challenge. Test cases follow BDD pattern and test cases names are descriptive._
