@@ -41,7 +41,7 @@ public class TriangleTest {
     }
 
     @Test
-    public void shouldTestIsoscelesTriangleWhenFirstTwoSidesAreSame() {
+    public void shouldTestIsoscelesTriangleWhenFirstAndSecondSidesAreSame() {
         // given
         Triangle triangle = new Triangle(3, 3, 5);
         // when
@@ -51,9 +51,19 @@ public class TriangleTest {
     }
 
     @Test
-    public void shouldTestIsoscelesTriangleWhenLastTwoSidesAreSame() {
+    public void shouldTestIsoscelesTriangleWhenSecondAndThirdSidesAreSame() {
         // given
         Triangle triangle = new Triangle(5, 3, 3);
+        // when
+        TriangleType type = triangle.getType();
+        // then
+        assertThat(type).isEqualTo(TriangleType.ISOSCELES);
+    }
+
+    @Test
+    public void shouldTestIsoscelesTriangleWhenFirstAndThirdSidesAreSame() {
+        // given
+        Triangle triangle = new Triangle(3, 5, 3);
         // when
         TriangleType type = triangle.getType();
         // then
